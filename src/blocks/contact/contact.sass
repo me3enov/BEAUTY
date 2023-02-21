@@ -1,0 +1,11 @@
+@import '../../pages/config'
+
+.contact
+  max-width: calc($pageWidth - ($minPadding * 2))
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  @include for-tablet-landscape-up
+    max-width: calc($maxWidth - ($maxPadding * 2))
+  @include for-phone-only
+    justify-content: center

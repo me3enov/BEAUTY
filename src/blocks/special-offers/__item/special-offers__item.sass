@@ -1,0 +1,12 @@
+@import '../../../pages/config'
+
+.special-offers__item
+  @extend %transition
+  display: flex
+  flex-flow: column wrap
+  align-items: center
+  padding: 25px 20px
+  background-color: $white
+  &:focus, &:hover
+    @extend %scaleLink
+    @include setShadow (0.2)

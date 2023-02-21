@@ -1,0 +1,14 @@
+@import '../../pages/config'
+
+.main-slider
+  overflow: hidden
+  width: $pageWidth
+  height: 604px
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  justify-content: center
+  background-color: $accent
+  @include for-phone-only
+    height: 100%
+

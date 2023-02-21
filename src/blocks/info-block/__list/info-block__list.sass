@@ -1,0 +1,11 @@
+@import '../../../pages/config'
+
+.info-block__list
+  max-width: calc(100vw - ($minPadding * 2))
+  display: grid
+  grid-template-columns: repeat(auto-fill, 100%)
+  justify-content: center
+  gap: 30px
+  @include for-tablet-landscape-up
+    max-width: calc($maxWidth - ($maxPadding * 2))
+    grid-template-columns: repeat(auto-fill, minmax(auto, 540px))

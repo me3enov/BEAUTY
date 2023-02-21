@@ -1,0 +1,10 @@
+@import '../../../pages/config'
+
+.menu__list
+  max-width: calc($pageWidth - ($minPadding * 2))
+  display: flex
+  flex-flow: row wrap
+  padding-bottom: 10px
+  @include for-tablet-landscape-up
+    max-width: calc($maxWidth - ($maxPadding * 2))
+    padding: 0

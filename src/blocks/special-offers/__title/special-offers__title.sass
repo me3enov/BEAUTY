@@ -1,0 +1,10 @@
+@import '../../../pages/config'
+
+.special-offers__title
+  @extend %widthWithIndents
+  @extend %overflow
+  @include setFontStyle (700, 24px, 28px, 0)
+  color: $black
+  padding-bottom: 38px
+  @include for-phone-only
+    padding: 0 $minPadding 38px

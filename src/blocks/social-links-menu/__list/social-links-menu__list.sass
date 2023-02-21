@@ -1,0 +1,8 @@
+@import '../../../pages/config'
+
+.social-links-menu__list
+  max-width: $pageWidth
+  display: flex
+  flex-flow: row wrap
+  @include for-tablet-landscape-up
+    max-width: calc($maxWidth - ($maxPadding * 2))

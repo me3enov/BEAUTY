@@ -1,0 +1,14 @@
+@import '../../../pages/config'
+
+.footer__privacy-container
+  width: $pageWidth
+  max-width: calc($pageWidth - ($minPadding * 2))
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: space-between
+  padding: 13px 0
+  @include for-tablet-landscape-up
+    max-width: calc($maxWidth - ($maxPadding * 2))
+  @include for-phone-only
+    justify-content: center

@@ -1,0 +1,11 @@
+@import '../../../../pages/config'
+
+.info-block__item_envelope
+  &:after
+    display: flex
+    align-self: flex-end
+    @include createAfter (140px, 140px)
+    @include setBackgroundSvg ('../assets/images/icons/envelope.svg', 140px, 140px)
+    @media (max-width: 549px)
+      visibility: hidden
+      opacity: 0

@@ -1,0 +1,12 @@
+@import '../../../pages/config'
+
+.footer__text
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  @extend %overflow
+  @include setFontStyle (400, 12px, 14px, 0)
+  padding: 5px 20px 5px 0
+  @include for-phone-only
+  &:last-of-type
+    padding: 5px 0

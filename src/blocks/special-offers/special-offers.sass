@@ -1,0 +1,11 @@
+@import '../../pages/config'
+
+.special-offers
+  width: $pageWidth
+  display: grid
+  grid-template-rows: 1fr
+  align-items: center
+  justify-content: center
+  background-color: $grayEF
+  @include for-phone-only
+    justify-content: start

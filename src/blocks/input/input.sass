@@ -1,0 +1,20 @@
+@import '../../pages/config'
+
+.input
+  max-width: calc($pageWidth - ($minPadding * 2))
+  position: relative
+  @include setFontStyle (400, 16px, 16px, 0)
+  @include createButton(auto, 35px)
+  @extend %overflow
+  background-color: $white
+  color: $grayC4
+  display: block
+  border: 2px solid $accent
+  padding: 0 27px
+  text-align: left
+  @include for-tablet-landscape-up
+    max-width: calc($maxWidth - ($maxPadding * 2))
+  &:focus, &:hover
+    @extend %scaleLink
+  &:focus
+    @include setShadow (0.4)

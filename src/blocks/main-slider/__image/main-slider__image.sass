@@ -1,0 +1,12 @@
+@import '../../../pages/config'
+
+.main-slider__image
+  width: 584px
+  height: 584px
+  z-index: 2
+  grid-row: 1
+  grid-column: 1
+  @include setBackgroundImage ('../assets/images/images/SBS-923097/SBS-923097', no-repeat, center, cover)
+  @include for-phone-only
+    width: 440px
+    height: 440px

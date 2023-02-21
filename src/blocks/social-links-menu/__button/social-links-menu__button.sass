@@ -1,0 +1,11 @@
+@import '../../../pages/config'
+
+.social-links-menu__button
+  display: flex
+  @include createButton(45px, 45px)
+  background-color: $white
+  border: 2px solid $accent
+  &:focus, &:hover
+    background-color: $accent
+    color: $white
+    @extend %scaleLink
