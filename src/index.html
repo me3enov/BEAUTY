@@ -23,24 +23,24 @@
   <!--root start-->
   <div class="root">
     <!--header start-->
-    <header class="header" aria-label="Хедер">
+    <header class="header">
       <!--submenu start-->
       <nav class="submenu">
         <ul class="submenu__list">
           <li class="submenu__item">
-            <a class="submenu__link" rel="Delivery" href="#">Доставка</a>
+            <a class="submenu__link" target="_self" href="#">Доставка</a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" rel="Payment" href="#">Оплата</a>
+            <a class="submenu__link" target="_self" href="#">Оплата</a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" rel="Reviews" href="#">Отзывы</a>
+            <a class="submenu__link" target="_self" href="#">Отзывы</a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" rel="Question" href="#">Вопрос - ответ</a>
+            <a class="submenu__link" target="_self" href="#">Вопрос - ответ</a>
           </li>
           <li class="submenu__item">
-            <a class="submenu__link" rel="Contacts" href="#">Контакты</a>
+            <a class="submenu__link" target="_self" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -48,7 +48,8 @@
 
       <!--info-container start-->
       <div class="header__info-container">
-        <a class="logo" rel="Home" href="#">
+        <!--logo start-->
+        <a class="logo" target="_self" href="#">
           <svg class="logo__image" xmlns="http://www.w3.org/2000/svg" fill="none">
             <g clip-path="url(#a)">
               <path fill="#66C05D" d="M57.22 25.373 46.687 35.906l4.079 4.079L61.299 29.45l-4.079-4.078ZM35.91 46.706 25.375 57.24l4.078 4.078 10.534-10.533-4.079-4.078ZM50.517 18.706 39.984 29.239l4.078 4.078 10.534-10.533-4.079-4.078ZM29.235 40.01 18.703 50.545l4.079 4.078 10.533-10.533-4.079-4.078ZM22.758 25.373l-4.079 4.078 10.533 10.533 4.079-4.078-10.533-10.533ZM29.454 18.699l-4.078 4.078L35.909 33.31l4.078-4.078L29.454 18.7ZM50.76 39.98l-4.08 4.08 10.534 10.532 4.078-4.078L50.76 39.981ZM44.092 46.684l-4.078 4.078 10.533 10.533 4.078-4.078-10.533-10.533Z"/><path fill="#EFEFEF" d="m54.606 65.394-4.067-4.066L40 71.868l-10.54-10.54-4.066 4.066L40 80l14.606-14.606ZM18.672 29.46l-4.066-4.066L0 40l14.606 14.606 4.066-4.067L8.132 40l10.54-10.54ZM65.394 25.394l-4.066 4.067L71.868 40l-10.54 10.54 4.066 4.066L80 40 65.394 25.394ZM50.54 18.672l4.066-4.066L40 0 25.394 14.606l4.067 4.066L40 8.132l10.54 10.54Z"/>
@@ -61,10 +62,14 @@
           </svg>
           <h1 class="logo__text">BEAUTY</h1>
         </a>
+        <!--logo end-->
+
+        <!--contact start-->
         <div class="contact">
           <p class="contact__text">8 (812) 123-45-67</p>
           <button class="button button_contact">Обратный звонок</button>
         </div>
+        <!--contact start-->
       </div>
       <!--info-container end-->
 
@@ -72,22 +77,22 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" rel="Salon" href="#">Парикмахерская</a>
+            <a class="menu__link" target="_self" href="#">Парикмахерская</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" rel="Barbershop" href="#">Барбершоп</a>
+            <a class="menu__link" target="_self" href="#">Барбершоп</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" rel="Manicure" href="#">Маникюр</a>
+            <a class="menu__link" target="_self" href="#">Маникюр</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" rel="Pedicure" href="#">Педикюр</a>
+            <a class="menu__link" target="_self" href="#">Педикюр</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" rel="Massage" href="#">Массаж</a>
+            <a class="menu__link" target="_self" href="#">Массаж</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" rel="Furniture" href="#">Мебель</a>
+            <a class="menu__link" target="_self" href="#">Мебель</a>
           </li>
         </ul>
       </nav>
@@ -97,60 +102,65 @@
 
     <!--content start-->
     <main class="content">
-      <!--section main-slider start-->
-      <section class="main-slider" aria-label="Акция">
+      <!--section main slider start-->
+      <section class="main-slider">
         <div class="main-slider__indents-box">
+          <!--info container start-->
           <div class="main-slider__info-container">
             <h2 class="main-slider__title">Супер кресло</h2>
             <p class="main-slider__text">
               Текст акции всегда отражает суть, а не просто
               болтовню, поэтому внимательнее
             </p>
-            <button class="button button_invert button_slider">Подробнее</button>
+            <a class="button button_invert button_slider" target="_self" href="#">Подробнее</a>
           </div>
+          <!--info container end-->
+
+          <!--image container start-->
           <div class="main-slider__image-container">
-            <div class="main-slider__image"></div>
+            <div class="main-slider__image product-image product-image__big product-image__product-0002"></div>
             <div class="main-slider__circle main-slider__circle_opacity-04 main-slider__circle_1-16"></div>
             <div class="main-slider__circle main-slider__circle_opacity-04 main-slider__circle_1-47"></div>
           </div>
+          <!--image container end-->
         </div>
       </section>
-      <!--section main-slider end-->
+      <!--section main slider end-->
 
-      <!--section main-slider start-->
-      <section class="special-offers root__special-offers" aria-label="Специальные предложения">
+      <!--section special offers start-->
+      <section class="special-offers root__special-offers">
         <h2 class="special-offers__title">Специальные предложения</h2>
         <ul class="special-offers__list">
-          <li class="special-offers__item">
-            <div class="special-offers__image"></div>
-            <p class="special-offers__text">Парикмахерское кресло «Норм» гидравлическое</p>
-            <p class="special-offers__price">9 900 ₽</p>
+          <li class="card">
+            <div class="product-image product-image__small product-image__product-0001"></div>
+            <p class="card__text">Парикмахерское кресло «Норм» гидравлическое</p>
+            <p class="card__price">9 900 ₽</p>
             <button class="button button_invert button_special-offers">Купить</button>
           </li>
-          <li class="special-offers__item">
-            <div class="special-offers__image"></div>
-            <p class="special-offers__text">Парикмахерское кресло «Норм» гидравлическое</p>
-            <p class="special-offers__price">9 900 ₽</p>
+          <li class="card">
+            <div class="product-image product-image__small product-image__product-0001"></div>
+            <p class="card__text">Парикмахерское кресло «Норм» гидравлическое</p>
+            <p class="card__price">9 900 ₽</p>
             <button class="button button_invert button_special-offers">Купить</button>
           </li>
-          <li class="special-offers__item">
-            <div class="special-offers__image"></div>
-            <p class="special-offers__text">Парикмахерское кресло «Норм» гидравлическое</p>
-            <p class="special-offers__price">9 900 ₽</p>
+          <li class="card">
+            <div class="product-image product-image__small product-image__product-0001"></div>
+            <p class="card__text">Парикмахерское кресло «Норм» гидравлическое</p>
+            <p class="card__price">9 900 ₽</p>
             <button class="button button_invert button_special-offers">Купить</button>
           </li>
-          <li class="special-offers__item">
-            <div class="special-offers__image"></div>
-            <p class="special-offers__text">Парикмахерское кресло «Норм» гидравлическое</p>
-            <p class="special-offers__price">9 900 ₽</p>
+          <li class="card">
+            <div class="product-image product-image__small product-image__product-0001"></div>
+            <p class="card__text">Парикмахерское кресло «Норм» гидравлическое</p>
+            <p class="card__price">9 900 ₽</p>
             <button class="button button_invert button_special-offers">Купить</button>
           </li>
         </ul>
       </section>
-      <!--section main-slider end-->
+      <!--section special offers end-->
 
       <!--section info block start-->
-      <section class="info-block root__info-blocks" aria-label="Специальные предложения">
+      <section class="info-block root__info-blocks">
         <ul class="info-block__list">
           <li class="info-block__item info-block__item_envelope">
             <h3 class="info-block__title">Получайте бонусы и подарки</h3>
@@ -175,23 +185,23 @@
     <!--content end-->
 
     <!--footer start-->
-    <footer class="footer" aria-label="Футер">
+    <footer class="footer" aria-label="Футер меню">
       <!--info-container start-->
       <div class="footer__info-container">
         <!--social links start-->
         <nav class="social-links-menu social-links-menu_footer">
           <ul class="social-links-menu__list">
             <li class="social-links-menu__item">
-              <a class="social-links-menu__button social-links-menu__button_youtube" rel="YouTube" href="https://www.youtube.com" target="_blank"></a>
+              <a class="social-links-menu__button social-links-menu__button_youtube" href="https://www.youtube.com" target="_blank"></a>
             </li>
             <li class="social-links-menu__item">
-              <a class="social-links-menu__button social-links-menu__button_vk" rel="ВКонтакте" href="https://vk.com" target="_blank"></a>
+              <a class="social-links-menu__button social-links-menu__button_vk" href="https://vk.com" target="_blank"></a>
             </li>
             <li class="social-links-menu__item">
-              <a class="social-links-menu__button social-links-menu__button_fb" rel="Facebook" href="https://www.facebook.com" target="_blank"></a>
+              <a class="social-links-menu__button social-links-menu__button_fb" href="https://www.facebook.com" target="_blank"></a>
             </li>
             <li class="social-links-menu__item">
-              <a class="social-links-menu__button social-links-menu__button_instagram" rel="Instagram" href="https://www.instagram.com" target="_blank"></a>
+              <a class="social-links-menu__button social-links-menu__button_instagram" href="https://www.instagram.com" target="_blank"></a>
             </li>
           </ul>
         </nav>
@@ -216,7 +226,7 @@
             <span class="footer__span">Лучший магазин (с) 2019 Все права защищены.</span>
             <span class="footer__span">Интернет-магазин оборудования для салонов красоты</span>
           </p>
-          <a class="footer__text footer__link" rel="Политика конфиденциальности" href="#" target="_blank">Политика конфиденциальности</a>
+          <a class="footer__text footer__link" href="#" target="_blank">Политика конфиденциальности</a>
         </div>
       </nav>
       <!--text container start-->

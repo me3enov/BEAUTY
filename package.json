@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "dev": "webpack serve --open",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.css,.md,.json ",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.css,.md,.json",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "test": "npx jest"
   },
@@ -38,6 +38,7 @@
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss-loader": "^7.0.0",
+    "prettier": "2.8.4",
     "sass": "^1.58.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",

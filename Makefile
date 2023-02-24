@@ -2,8 +2,16 @@ install:
 	npm ci
 
 lint:
-	make install
-	npx eslint .
+	npm run lint
+
+lint-fix:
+	npm run lint:fix
 
 run:
 	npm run dev
+
+lint-fix:
+	npm run lint:fix
+
+format:
+	npm run format

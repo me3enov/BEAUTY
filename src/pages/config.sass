@@ -1,5 +1,4 @@
-/* colors*/
-
+/* COLORS*/
 /* white*/
 $whiteLightness: 100%
 $white: hsl(0, 0%, $whiteLightness)
@@ -7,7 +6,7 @@ $white: hsl(0, 0%, $whiteLightness)
 /* accent*/
 $accent: #66C05D
 
-/* black #333333*/
+/* black #000000*/
 $black: hsl(0, 0%, calc($whiteLightness - 100%))
 
 /* dark #333333*/
@@ -22,7 +21,7 @@ $grayC4: hsl(0, 0%, calc($whiteLightness - 23%))
 /* gray #EFEFEF*/
 $grayEF: hsl(0, 0%, calc($whiteLightness - 6%))
 
-
+/* SIZES*/
 $pageWidth: 100%
 $maxWidth: 1280px
 $maxPadding: 85px
@@ -36,6 +35,8 @@ $minPadding: 30px
 %widthWithIndents
     max-width: calc($maxWidth - ($maxPadding * 2))
 
+
+/* DECORATION*/
 %link
     border-bottom-color: $accent
     color: $accent
@@ -58,6 +59,8 @@ $minPadding: 30px
     overflow: hidden
     text-overflow: ellipsis
 
+
+/* MIXINS*/
 @mixin setBackgroundImage ($path, $repeat, $position, $size)
     background-repeat: $repeat
     background-position: $position
@@ -108,6 +111,7 @@ $minPadding: 30px
 @mixin setShadow ($number)
     box-shadow: rgba(99, 99, 99, $number) 0px 2px 8px 0px
 
+/* MEDIA QUERY*/
 @mixin for-phone-only
     @media (max-width: 839px)
         @content
@@ -116,6 +120,7 @@ $minPadding: 30px
     @media (min-width: 1280px)
         @content
 
+/* STYLE FOR ALL PAGE*/
 *
     color: $black
     -webkit-box-sizing: border-box
@@ -132,6 +137,8 @@ $minPadding: 30px
     padding: 0
     margin: 0
 
+
+/* MY NORMOLIZE CSS*/
 a
     background-color: transparent
     text-decoration: none
