@@ -1,11 +1,9 @@
-@import '../../../pages/config'
-
 .main-slider__indents-box
-  @extend %contentSize
   display: flex
   flex-flow: row nowrap
   align-items: center
   justify-content: flex-start
+  @extend %contentSize
   @include for-phone-only
     flex-flow: column-reverse
     justify-content: center

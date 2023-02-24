@@ -1,14 +1,12 @@
-@import '../../../pages/config'
-
 .contact__address
-  @extend %widthWithIndents
-  @extend %overflow
   display: block
   justify-self: left
-  @include setFontStyle (400, 14px, 16px, 0)
   padding: 5px 40px 0
   color: $gray33
   border-bottom: 1px dashed transparent
+  @extend %widthWithIndents
+  @extend %overflow
+  @include setFontStyle (400, 14px, 16px, 0)
   @include for-tablet-landscape-up
     max-width: 100%
     justify-self: center

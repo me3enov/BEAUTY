@@ -3,15 +3,15 @@
 .button
   max-width: calc($pageWidth - ($minPadding * 2))
   position: relative
-  @include setFontStyle (400, 16px, 19px, 0)
-  @include createButton(auto, 40px)
-  @extend %overflow
   background-color: $white
   display: block
   border: 2px solid $accent
   padding: 8px 27px 12px
   text-align: center
   cursor: pointer
+  @include setFontStyle (400, 16px, 19px, 0)
+  @include createButton(auto, 40px)
+  @extend %overflow
   @include for-tablet-landscape-up
     max-width: calc($maxWidth - ($maxPadding * 2))
   &:focus, &:hover

@@ -1,12 +1,10 @@
-@import '../../pages/config'
-
 .card
-  @extend %transition
   display: flex
   flex-flow: column wrap
   align-items: center
   padding: 25px 20px
   background-color: $white
+  @extend %transition
   &:focus, &:hover
     @extend %scaleLink
     @include setShadow (0.2)

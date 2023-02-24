@@ -1,12 +1,10 @@
-@import '../../../pages/config'
-
 .submenu__link
-  max-width: 100%
-  @extend %overflow
   display: block
-  @include setFontStyle (400, 14px, 16px, 0)
+  max-width: 100%
   padding: 5px 0
   color: $gray33
   border-bottom: 1px dashed transparent
+  @extend %overflow
+  @include setFontStyle (400, 14px, 16px, 0)
   &:hover,&:focus
     @extend %link
