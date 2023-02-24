@@ -16,7 +16,7 @@
     "url": "git+https://github.com/me3enov/BEAUTY.git"
   },
   "keywords": [
-    "Elite Fire"
+    "BEAUTY"
   ],
   "author": "Artem Mezenov",
   "license": "ISC",
@@ -31,9 +31,11 @@
     "eslint": "^8.18.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
@@ -42,6 +44,7 @@
     "sass": "^1.58.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
+    "uuid": "^3.3.3",
     "webpack": "^5.75.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"

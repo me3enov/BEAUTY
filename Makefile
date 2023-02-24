@@ -10,8 +10,5 @@ lint-fix:
 run:
 	npm run dev
 
-lint-fix:
-	npm run lint:fix
-
 format:
 	npm run format
