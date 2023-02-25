@@ -78,7 +78,7 @@ export const dataForPage = {
   infoBlockItems: {
     [uuid()]: {
       title: 'Получайте бонусы и подарки',
-      text: `Каждый месяц разыгрываем 10 000 рублей для наших клиентов`,
+      text: `Каждый месяц разыгрываем\n10 000 рублей для наших клиентов`,
       input: {
         id: 'input_info-block1',
         type: 'email',
@@ -89,7 +89,7 @@ export const dataForPage = {
     },
     [uuid()]: {
       title: 'Заходите к нам',
-      text: `Более 300 магазинов по всей России`,
+      text: `Более 300 магазинов\nпо всей России`,
       buttonText: 'Карта магазинов'
     }
   },
