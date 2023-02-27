@@ -3,7 +3,7 @@
 ## Для запуска проекта - "make run".
 
 ### Демонстрация экрана:
-![Главная страница](https://github.com/me3enov/BEAUTY/raw/main/src/page-preview/screencapture.png)
+![Главная страница](./screen.png)
 
 ### Функционал:
 * Адаптивно-отзывчивая верстка
