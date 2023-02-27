@@ -8,6 +8,7 @@ lint-fix:
 	npm run lint:fix
 
 run:
+	make install
 	npm run dev
 
 format:
